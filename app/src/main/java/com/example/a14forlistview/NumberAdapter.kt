@@ -1,20 +1,36 @@
 package com.example.a14forlistview
 
 import android.app.Activity
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import kotlin.math.log
 
-class NumberAdapter(acticvity:Activity,val resoursedId:Int,data:List<Number>)
-    :ArrayAdapter<Number>(acticvity,resoursedId,data) {
+class NumberAdapter(acticvity:Activity,val resourcedId:Int,data:List<Number>)
+    :ArrayAdapter<Number>(acticvity,resourcedId,data) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup)
     : View {
 
-        val view=LayoutInflater.from(context).inflate(resourcedId,parent,false)
+        //提升运行效率
+        val view:View
+        if (convertView==null){
+            view=LayoutInflater.from(context).inflate(resourcedId,parent,false)
+            Log.d("listviewTset","创建新的view")
+        }else{
+            view=convertView
+            Log.d("listviewTest","重用旧的view")
+        }
+
+
+
+
+
+
 
         //获取listView子项布局中控件的id
         val numberImage:ImageView=view.findViewById(R.id.numImage)
