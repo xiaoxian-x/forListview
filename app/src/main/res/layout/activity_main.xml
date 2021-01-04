@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/mylistview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="664dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSchLife"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSchLife"
+        android:layout_width="121dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="664dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/btnName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mylistview" />
+
+    <Button
+        android:id="@+id/btnSchFourm"
+        android:layout_width="133dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/btnSchFourm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSchPerson"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <Button
+        android:id="@+id/btnSchPerson"
+        android:layout_width="128dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/btnSchPerson"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

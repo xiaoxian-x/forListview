@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">1.4forListview</string>
+    <string name="btnName">校园动态</string>
+    <string name="btnSchFourm">校园论坛</string>
+    <string name="btnSchPerson">个人主页</string>
+</resources>
